@@ -398,19 +398,19 @@ tenis.name = 'tenis Jordan'
 // através do objeto nativo document, é possível executar métodos que permitem obter e manipular o HTML
 
 // seleciona elemento pelo id; pouco recomendado fazer dessa forma
-console.log(document.getElementById('titulo'))
+console.log(document.getElementById('title'))
 
 // seleciona vários elementos pelo nome da classe e cria um array
 const texts = document.querySelectorAll('.text')
-console.log(texts)
+console.log(typeof(texts))
 
 texts.forEach((data) => console.log(data))
 
 // manipula o conteúdo de um elemento
-texts[0].textContent = 'Estou alterando o primeiro parágrafo.'
+texts[0].textContent = 'Estou alterando o título...'
 
 // insere conteúdo (string que pode descrever um HTML) em um elemento
-texts[0].innerHTML = '<span>Testando uma alteração...</span>'
+//texts[0].innerHTML = '<span>Testando uma alteração...</span>'
 
 // altera propriedades do css inline do elemento
 texts[1].style.backgroundColor = 'red'
@@ -422,7 +422,7 @@ texts[2].remove()
 // seleciona um elemento pelo id, armazenando em uma variável
 const button = document.querySelector('#btn')
 // rotina para a execução de alteração no estilo de um elemento a partir do clique
-button.addEventListener('click',()=>(texts[3].style.backgroundColor='orange'))
+button.addEventListener('click',()=>(texts[0].style.backgroundColor='orange'))
 
 // callbacks
 
