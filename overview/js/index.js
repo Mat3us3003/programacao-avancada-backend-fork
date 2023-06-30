@@ -385,6 +385,7 @@ const shirt = new Product('Camisa branca', 19.99)
 console.log(shirt.productDetails())
 const sock = new Product('Meia cinza', 12.49)
 console.log(sock.productDetails())
+console.warn('Aviso!')
 // chamando um método estático sem a necessidade de especificar um objeto
 Product.test()
 const tenis = new Tenis('tenis Nike Jordan', 12000.00, '42')
